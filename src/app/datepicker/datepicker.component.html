@@ -1,0 +1,4 @@
+{{DatePicker}}
+<input class="form-control" placeholder="yyyy-mm-dd"
+       name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+<pre>Model: {{ model | json }}</pre>     
