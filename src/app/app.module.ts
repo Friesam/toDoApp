@@ -8,17 +8,19 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
 import { HeaderComponent } from './header/header.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FormsModule } from '@angular/forms';
+import { NgbdCarouselCOnfigComponent } from './header/ngbd-carousel-config/ngbd-carousel-config.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoFormComponent,
     HeaderComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    NgbdCarouselCOnfigComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot(),
+    NgbModule,
     FormsModule
   ],
   providers: [],

@@ -1,4 +1,13 @@
-{{DatePicker}}
-<input class="form-control" placeholder="yyyy-mm-dd"
-       name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
-<pre>Model: {{ model | json }}</pre>     
+<div class="row">
+    <div class="col-6">
+      <ngb-datepicker #d1 [(ngModel)]="model1" #c1="ngModel"></ngb-datepicker>
+  
+      <hr/>
+      <button class="btn btn-sm btn-outline-primary" (click)="model1 = today">Select Today</button>
+      <hr/>
+<!--   
+      <pre>Model: {{ model1 | json }}</pre>
+      <pre>State: {{ c1.status }}</pre> -->
+    </div>
+
+  </div>
